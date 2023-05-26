@@ -46,7 +46,7 @@ namespace DoxygenGenerator
             doxyFileStringBuilder = doxyFileStringBuilder.Replace("INPUT                  =", $"INPUT                  = \"{inputDirectory}\"");
             doxyFileStringBuilder = doxyFileStringBuilder.Replace("OUTPUT_DIRECTORY       =", $"OUTPUT_DIRECTORY       = \"{outputDirectory}\"");
             doxyFileStringBuilder = doxyFileStringBuilder.Replace("HTML_EXTRA_STYLESHEET  =", $"HTML_EXTRA_STYLESHEET  = \"{doxygenAwesomeDestination}\" \"{doxygenAwesomeSidebarOnlyDestination}\"");
-            doxyFileStringBuilder = doxyFileStringBuilder.Replace("SHOW_USED_FILES  =", $"SHOW_USED_FILES  = \"NO\"");
+            doxyFileStringBuilder = doxyFileStringBuilder.Replace("SHOW_USED_FILES        =", $"SHOW_USED_FILES        = \"NO\"");
 
             doxyFileText = doxyFileStringBuilder.ToString();
             File.WriteAllText(doxyFileDestination, doxyFileText);
